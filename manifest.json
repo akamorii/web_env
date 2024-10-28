@@ -1,0 +1,24 @@
+{
+    "name": "web_env",
+
+    "description": "mini notes for your browser",
+
+    "version": "0.1",
+
+    "manifest_version": 3,
+    
+    "background":{
+        "service_worker": "main.js"
+      },
+
+    "icons": {"16":"./moon.jpg","32":"./moon.jpg"},
+
+    "action": {"default_title": "Открыть боковую панель"},
+
+    "permissions": ["sidePanel"],
+
+    
+    "side_panel": {
+        "default_path": "sidebar.html" 
+      }
+}
